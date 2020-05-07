@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: hsla(228, 6%, 66%, 0.05);
+    padding: 6rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    font-size: 2.4rem;
+    font-weight: 200;
+    text-align: center;
+    width: 30rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.header--bold{
+    font-weight: 600;
+}
+
+.text{
+    width: 30rem;
+    padding: 2rem 0 6rem 0;
+    color: hsl(229, 6%, 66%);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    width: 30rem;
+    height: 25rem;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 1.3rem 1.5rem 0 rgba(216, 226, 236, 0.7);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.card::before{
+    content: "";
+    width: 100%;
+    height: 0.4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.supervisor::before{
+  background-color: hsl(180, 62%, 55%);
+}
+
+.team-builder::before{
+  background-color: hsl(0, 78%, 62%);
+}
+
+.karma::before{
+    background-color: hsl(34, 97%, 64%);
+}
+
+.calculator::before{
+    background-color: hsl(212, 86%, 64%);
+}
+
+.card-title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 1rem;
+}
+.card-image{
+    width: 7rem;
+    align-self: flex-end;
+}
+.card-text{
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.footer{
+    width: 30rem;
+}
+
+.attribution{
+    font-size: 1.5rem;
+}
+
+.attribution a {
+    font-size: inherit;
+    text-decoration: none;
+    color: hsl(180, 62%, 55%);
+}
+
+@media only screen and (min-width: 1000px){
+    .footer{
+        width: 45rem;
+    }
+
+    .supervisor{
+        align-self: center;
+    }
+
+    .calculator{
+        align-self: center;
+    }
+
+    .card-container{
+        flex-direction: row;
+    }
+
+    .card{
+        border-radius: 5px;
+        width: 35rem;
+    }
+
+    .header{
+        font-size: 3.5rem;
+        width: 500px;
+    }
+
+    .text{
+        font-size: 1.5rem;
+        width: 50rem;
+    }
+
+    .card--middle{
+        padding: 0 2rem 0 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
